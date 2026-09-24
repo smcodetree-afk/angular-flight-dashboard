@@ -1,0 +1,23 @@
+<div class="dashboard">
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✈</span>
+      <div>
+        <h1>Flight Tracking &amp; Operations Dashboard</h1>
+        <span class="subtitle">Ramphal Aviation Operations Center</span>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span class="live-dot" aria-hidden="true"></span>
+      Live mock feed
+    </div>
+  </header>
+
+  <app-kpi-cards class="kpi-section"></app-kpi-cards>
+
+  <div class="main-grid">
+    <app-flight-sidebar class="pane pane-sidebar"></app-flight-sidebar>
+    <app-flight-map class="pane pane-map"></app-flight-map>
+    <app-flight-details class="pane pane-details"></app-flight-details>
+  </div>
+</div>

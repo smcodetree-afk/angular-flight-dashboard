@@ -1,0 +1,142 @@
+.details-panel {
+  height: 100%;
+  background: var(--bg-panel);
+  border-left: 1px solid var(--border-subtle);
+  padding: 18px 18px 24px;
+  overflow-y: auto;
+}
+
+.details-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  h2 {
+    margin: 0 0 2px;
+    font-size: 19px;
+    font-family: var(--font-mono);
+  }
+
+  .flight-number {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+  }
+}
+
+.close-btn {
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 12px;
+
+  &:hover {
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+}
+
+.route-visual {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0;
+  padding: 14px;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.route-point {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+
+  .code {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .name {
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.align-right {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.route-line {
+  flex: 1;
+  position: relative;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+  border-radius: 2px;
+
+  .plane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    color: var(--accent-strong);
+    font-size: 14px;
+  }
+}
+
+.detail-grid {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+
+  dt {
+    color: var(--text-muted);
+    font-size: 12.5px;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+.empty-state {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-muted);
+  gap: 10px;
+  padding: 30px 10px;
+
+  .empty-icon {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 13px;
+    max-width: 200px;
+    margin: 0;
+  }
+}

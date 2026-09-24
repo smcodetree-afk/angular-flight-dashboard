@@ -1,0 +1,77 @@
+<section class="details-panel" aria-label="Flight details">
+  <div *ngIf="selectedFlight$ | async as flight; ngIfElse emptyState">
+    <header class="details-header">
+      <div>
+        <h2>{{ flight.callsign }}</h2>
+        <span class="flight-number">{{ flight.flightNumber }} · {{ flight.aircraftType }}</span>
+      </div>
+      <button class="close-btn" type="button" (click)="close()" aria-label="Close details">✕</button>
+    </header>
+
+    <span class="status-pill" [ngClass]="'status-' + flight.status.toLowerCase()">{{ flight.status }}</span>
+
+    <div class="route-visual">
+      <div class="route-point">
+        <span class="code">{{ flight.origin.code }}</span>
+        <span class="name">{{ flight.origin.name }}</span>
+      </div>
+      <div class="route-line" aria-hidden="true">
+        <span class="plane">✈</span>
+      </div>
+      <div class="route-point align-right">
+        <span class="code">{{ flight.destination.code }}</span>
+        <span class="name">{{ flight.destination.name }}</span>
+      </div>
+    </div>
+
+    <dl class="detail-grid">
+      <div class="detail-row">
+        <dt>Flight Number</dt>
+        <dd>{{ flight.flightNumber }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Callsign</dt>
+        <dd>{{ flight.callsign }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Aircraft Type</dt>
+        <dd>{{ flight.aircraftType }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Origin</dt>
+        <dd>{{ flight.origin.code }} — {{ flight.origin.name }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Destination</dt>
+        <dd>{{ flight.destination.code }} — {{ flight.destination.name }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Current Status</dt>
+        <dd>{{ flight.status }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Est. Departure</dt>
+        <dd>{{ formatTime(flight.estimatedDeparture) }}</dd>
+      </div>
+      <div class="detail-row">
+        <dt>Est. Arrival</dt>
+        <dd>{{ formatTime(flight.estimatedArrival) }}</dd>
+      </div>
+      <div class="detail-row" *ngIf="flight.altitudeFt">
+        <dt>Altitude</dt>
+        <dd>{{ flight.altitudeFt | number }} ft</dd>
+      </div>
+      <div class="detail-row" *ngIf="flight.speedKts">
+        <dt>Ground Speed</dt>
+        <dd>{{ flight.speedKts }} kts</dd>
+      </div>
+    </dl>
+  </div>
+
+  <div #emptyState>
+    <div class="empty-state">
+      <span class="empty-icon" aria-hidden="true">🗺️</span>
+      <p>Select a flight on the map or from the list to view its details.</p>
+    </div>
+  </div>
+</section>

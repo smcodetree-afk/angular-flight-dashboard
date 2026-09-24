@@ -1,0 +1,9 @@
+<section class="kpi-row" *ngIf="kpis$ | async as kpis" aria-label="Operations summary">
+  <article class="kpi-card" *ngFor="let card of cards" [ngClass]="card.accent">
+    <span class="kpi-icon" aria-hidden="true">{{ card.icon }}</span>
+    <div class="kpi-body">
+      <span class="kpi-value">{{ kpis[card.key] }}</span>
+      <span class="kpi-label">{{ card.label }}</span>
+    </div>
+  </article>
+</section>

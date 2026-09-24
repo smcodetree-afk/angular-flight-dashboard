@@ -1,0 +1,80 @@
+<aside class="sidebar" aria-label="Flight search, filters and list">
+  <form class="filters" [formGroup]="filterForm">
+    <label class="search-field">
+      <span class="visually-hidden">Search by callsign or flight number</span>
+      <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+      <input
+        type="text"
+        formControlName="search"
+        placeholder="Search callsign or flight no."
+        autocomplete="off"
+      />
+    </label>
+
+    <div class="filter-row">
+      <label class="filter-field">
+        <span>Status</span>
+        <select formControlName="status">
+          <option *ngFor="let s of statuses" [value]="s">{{ s }}</option>
+        </select>
+      </label>
+
+      <label class="filter-field">
+        <span>Origin</span>
+        <select formControlName="origin">
+          <option value="All">All</option>
+          <option *ngFor="let code of originOptions" [value]="code">{{ code }}</option>
+        </select>
+      </label>
+
+      <label class="filter-field">
+        <span>Destination</span>
+        <select formControlName="destination">
+          <option value="All">All</option>
+          <option *ngFor="let code of destinationOptions" [value]="code">{{ code }}</option>
+        </select>
+      </label>
+    </div>
+
+    <button type="button" class="clear-btn" (click)="clearFilters()">Clear filters</button>
+  </form>
+
+  <div class="list-header">
+    <span>Flights</span>
+    <span class="count" *ngIf="filteredFlights$ | async as flights">{{ flights.length }}</span>
+  </div>
+
+  <ul class="flight-list" *ngIf="filteredFlights$ | async as flights; else loading">
+    <li
+      *ngFor="let flight of flights; trackBy: trackByFlightId"
+      class="flight-item"
+      [class.selected]="(selectedFlight$ | async)?.id === flight.id"
+      (click)="selectFlight(flight)"
+      tabindex="0"
+      role="button"
+      (keydown.enter)="selectFlight(flight)"
+    >
+      <div class="flight-item-top">
+        <span class="callsign">{{ flight.callsign }}</span>
+        <span class="status-pill" [ngClass]="'status-' + flight.status.toLowerCase()">{{ flight.status }}</span>
+      </div>
+      <div class="flight-item-route">
+        <span class="airport-code">{{ flight.origin.code }}</span>
+        <span class="route-arrow" aria-hidden="true">→</span>
+        <span class="airport-code">{{ flight.destination.code }}</span>
+        <span class="flight-number">{{ flight.flightNumber }}</span>
+      </div>
+    </li>
+
+    <li class="empty-state" *ngIf="flights.length === 0">
+      No flights match your filters.
+    </li>
+  </ul>
+
+  <ng-template #loading>
+    <div class="empty-state">Loading flights…</div>
+  </ng-template>
+</aside>

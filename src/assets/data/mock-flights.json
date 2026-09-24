@@ -1,0 +1,562 @@
+[
+  {
+    "id": "FL-1000",
+    "flightNumber": "AA100",
+    "callsign": "AAL1000",
+    "aircraftType": "Boeing 737-800",
+    "origin": {
+      "code": "LAX",
+      "name": "Los Angeles Intl",
+      "lat": 33.9416,
+      "lng": -118.4085
+    },
+    "destination": {
+      "code": "ORD",
+      "name": "Chicago O'Hare",
+      "lat": 41.9742,
+      "lng": -87.9073
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 35.1465,
+      "lng": -113.8333,
+      "heading": 62.4
+    },
+    "estimatedDeparture": "2026-09-22T04:30:00.000Z",
+    "estimatedArrival": "2026-09-22T06:00:00.000Z",
+    "altitudeFt": 28000,
+    "speedKts": 420
+  },
+  {
+    "id": "FL-1001",
+    "flightNumber": "UA107",
+    "callsign": "UAL1013",
+    "aircraftType": "Airbus A320neo",
+    "origin": {
+      "code": "BOS",
+      "name": "Boston Logan",
+      "lat": 42.3656,
+      "lng": -71.0096
+    },
+    "destination": {
+      "code": "SFO",
+      "name": "San Francisco Intl",
+      "lat": 37.6213,
+      "lng": -122.379
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 39.8986,
+      "lng": -97.7217,
+      "heading": 280.8
+    },
+    "estimatedDeparture": "2026-09-22T04:47:00.000Z",
+    "estimatedArrival": "2026-09-22T07:10:00.000Z",
+    "altitudeFt": 29234,
+    "speedKts": 477
+  },
+  {
+    "id": "FL-1002",
+    "flightNumber": "DA114",
+    "callsign": "DAL1026",
+    "aircraftType": "Boeing 777-300ER",
+    "origin": {
+      "code": "CDG",
+      "name": "Paris Charles de Gaulle",
+      "lat": 49.0097,
+      "lng": 2.5479
+    },
+    "destination": {
+      "code": "HND",
+      "name": "Tokyo Haneda",
+      "lat": 35.5494,
+      "lng": 139.7798
+    },
+    "status": "Delayed",
+    "currentPosition": {
+      "lat": 46.4522,
+      "lng": 28.622,
+      "heading": 33.6
+    },
+    "estimatedDeparture": "2026-09-22T05:04:00.000Z",
+    "estimatedArrival": "2026-09-22T08:20:00.000Z",
+    "altitudeFt": 30468,
+    "speedKts": 534
+  },
+  {
+    "id": "FL-1003",
+    "flightNumber": "BA121",
+    "callsign": "BAW1039",
+    "aircraftType": "Airbus A350-900",
+    "origin": {
+      "code": "ATL",
+      "name": "Atlanta Hartsfield",
+      "lat": 33.6407,
+      "lng": -84.4277
+    },
+    "destination": {
+      "code": "FRA",
+      "name": "Frankfurt am Main",
+      "lat": 50.0379,
+      "lng": 8.5622
+    },
+    "status": "Arrived",
+    "currentPosition": {
+      "lat": 50.0379,
+      "lng": 8.5622,
+      "heading": 44.3
+    },
+    "estimatedDeparture": "2026-09-22T05:21:00.000Z",
+    "estimatedArrival": "2026-09-22T09:30:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1004",
+    "flightNumber": "AF128",
+    "callsign": "AFR1052",
+    "aircraftType": "Boeing 787-9",
+    "origin": {
+      "code": "DFW",
+      "name": "Dallas Fort Worth",
+      "lat": 32.8998,
+      "lng": -97.0403
+    },
+    "destination": {
+      "code": "JFK",
+      "name": "New York JFK",
+      "lat": 40.6413,
+      "lng": -73.7781
+    },
+    "status": "Scheduled",
+    "currentPosition": {
+      "lat": 32.8998,
+      "lng": -97.0403,
+      "heading": 60.7
+    },
+    "estimatedDeparture": "2026-09-22T05:38:00.000Z",
+    "estimatedArrival": "2026-09-22T10:40:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1005",
+    "flightNumber": "UA135",
+    "callsign": "UAE1065",
+    "aircraftType": "Embraer E190",
+    "origin": {
+      "code": "HKG",
+      "name": "Hong Kong Intl",
+      "lat": 22.308,
+      "lng": 113.9185
+    },
+    "destination": {
+      "code": "SEA",
+      "name": "Seattle-Tacoma",
+      "lat": 47.4502,
+      "lng": -122.3088
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 37.3933,
+      "lng": -27.8179,
+      "heading": 34.3
+    },
+    "estimatedDeparture": "2026-09-22T05:55:00.000Z",
+    "estimatedArrival": "2026-09-22T11:50:00.000Z",
+    "altitudeFt": 34170,
+    "speedKts": 425
+  },
+  {
+    "id": "FL-1006",
+    "flightNumber": "JA142",
+    "callsign": "JAL1078",
+    "aircraftType": "Airbus A321neo",
+    "origin": {
+      "code": "DEN",
+      "name": "Denver Intl",
+      "lat": 39.8561,
+      "lng": -104.6737
+    },
+    "destination": {
+      "code": "LHR",
+      "name": "London Heathrow",
+      "lat": 51.47,
+      "lng": -0.4543
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 42.9919,
+      "lng": -76.5345,
+      "heading": 40.8
+    },
+    "estimatedDeparture": "2026-09-22T06:12:00.000Z",
+    "estimatedArrival": "2026-09-22T13:00:00.000Z",
+    "altitudeFt": 35404,
+    "speedKts": 482
+  },
+  {
+    "id": "FL-1007",
+    "flightNumber": "SI149",
+    "callsign": "SIA1091",
+    "aircraftType": "Boeing 747-8F",
+    "origin": {
+      "code": "ORD",
+      "name": "Chicago O'Hare",
+      "lat": 41.9742,
+      "lng": -87.9073
+    },
+    "destination": {
+      "code": "MIA",
+      "name": "Miami Intl",
+      "lat": 25.7959,
+      "lng": -80.287
+    },
+    "status": "Delayed",
+    "currentPosition": {
+      "lat": 31.6201,
+      "lng": -83.0303,
+      "heading": 156.4
+    },
+    "estimatedDeparture": "2026-09-22T06:29:00.000Z",
+    "estimatedArrival": "2026-09-22T14:10:00.000Z",
+    "altitudeFt": 36638,
+    "speedKts": 539
+  },
+  {
+    "id": "FL-1008",
+    "flightNumber": "DL156",
+    "callsign": "DLH1104",
+    "aircraftType": "Boeing 737-800",
+    "origin": {
+      "code": "SFO",
+      "name": "San Francisco Intl",
+      "lat": 37.6213,
+      "lng": -122.379
+    },
+    "destination": {
+      "code": "DXB",
+      "name": "Dubai Intl",
+      "lat": 25.2532,
+      "lng": 55.3657
+    },
+    "status": "Arrived",
+    "currentPosition": {
+      "lat": 25.2532,
+      "lng": 55.3657,
+      "heading": 2.3
+    },
+    "estimatedDeparture": "2026-09-22T06:46:00.000Z",
+    "estimatedArrival": "2026-09-22T15:20:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1009",
+    "flightNumber": "KL163",
+    "callsign": "KLM1117",
+    "aircraftType": "Airbus A320neo",
+    "origin": {
+      "code": "HND",
+      "name": "Tokyo Haneda",
+      "lat": 35.5494,
+      "lng": 139.7798
+    },
+    "destination": {
+      "code": "SYD",
+      "name": "Sydney Kingsford Smith",
+      "lat": -33.9399,
+      "lng": 151.1753
+    },
+    "status": "Scheduled",
+    "currentPosition": {
+      "lat": 35.5494,
+      "lng": 139.7798,
+      "heading": 170
+    },
+    "estimatedDeparture": "2026-09-22T07:03:00.000Z",
+    "estimatedArrival": "2026-09-22T16:30:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1010",
+    "flightNumber": "CP170",
+    "callsign": "CPA1130",
+    "aircraftType": "Boeing 777-300ER",
+    "origin": {
+      "code": "FRA",
+      "name": "Frankfurt am Main",
+      "lat": 50.0379,
+      "lng": 8.5622
+    },
+    "destination": {
+      "code": "SIN",
+      "name": "Singapore Changi",
+      "lat": 1.3644,
+      "lng": 103.9915
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 33.0022,
+      "lng": 41.9625,
+      "heading": 85
+    },
+    "estimatedDeparture": "2026-09-22T07:20:00.000Z",
+    "estimatedArrival": "2026-09-22T17:40:00.000Z",
+    "altitudeFt": 28340,
+    "speedKts": 430
+  },
+  {
+    "id": "FL-1011",
+    "flightNumber": "QF177",
+    "callsign": "QFA1143",
+    "aircraftType": "Airbus A350-900",
+    "origin": {
+      "code": "JFK",
+      "name": "New York JFK",
+      "lat": 40.6413,
+      "lng": -73.7781
+    },
+    "destination": {
+      "code": "AMS",
+      "name": "Amsterdam Schiphol",
+      "lat": 52.3105,
+      "lng": 4.7683
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 49.0431,
+      "lng": -17.2247,
+      "heading": 49
+    },
+    "estimatedDeparture": "2026-09-22T04:37:00.000Z",
+    "estimatedArrival": "2026-09-22T15:50:00.000Z",
+    "altitudeFt": 29574,
+    "speedKts": 487
+  },
+  {
+    "id": "FL-1012",
+    "flightNumber": "SW184",
+    "callsign": "SWA1156",
+    "aircraftType": "Boeing 787-9",
+    "origin": {
+      "code": "SEA",
+      "name": "Seattle-Tacoma",
+      "lat": 47.4502,
+      "lng": -122.3088
+    },
+    "destination": {
+      "code": "LAX",
+      "name": "Los Angeles Intl",
+      "lat": 33.9416,
+      "lng": -118.4085
+    },
+    "status": "Delayed",
+    "currentPosition": {
+      "lat": 42.1818,
+      "lng": -120.7877,
+      "heading": 166.3
+    },
+    "estimatedDeparture": "2026-09-22T04:54:00.000Z",
+    "estimatedArrival": "2026-09-22T07:00:00.000Z",
+    "altitudeFt": 30808,
+    "speedKts": 544
+  },
+  {
+    "id": "FL-1013",
+    "flightNumber": "AA191",
+    "callsign": "AAL1169",
+    "aircraftType": "Embraer E190",
+    "origin": {
+      "code": "LHR",
+      "name": "London Heathrow",
+      "lat": 51.47,
+      "lng": -0.4543
+    },
+    "destination": {
+      "code": "BOS",
+      "name": "Boston Logan",
+      "lat": 42.3656,
+      "lng": -71.0096
+    },
+    "status": "Arrived",
+    "currentPosition": {
+      "lat": 42.3656,
+      "lng": -71.0096,
+      "heading": 288.1
+    },
+    "estimatedDeparture": "2026-09-22T05:11:00.000Z",
+    "estimatedArrival": "2026-09-22T08:10:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1014",
+    "flightNumber": "UA198",
+    "callsign": "UAL1182",
+    "aircraftType": "Airbus A321neo",
+    "origin": {
+      "code": "MIA",
+      "name": "Miami Intl",
+      "lat": 25.7959,
+      "lng": -80.287
+    },
+    "destination": {
+      "code": "CDG",
+      "name": "Paris Charles de Gaulle",
+      "lat": 49.0097,
+      "lng": 2.5479
+    },
+    "status": "Scheduled",
+    "currentPosition": {
+      "lat": 25.7959,
+      "lng": -80.287,
+      "heading": 45.3
+    },
+    "estimatedDeparture": "2026-09-22T05:28:00.000Z",
+    "estimatedArrival": "2026-09-22T09:20:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1015",
+    "flightNumber": "DA205",
+    "callsign": "DAL1195",
+    "aircraftType": "Boeing 747-8F",
+    "origin": {
+      "code": "DXB",
+      "name": "Dubai Intl",
+      "lat": 25.2532,
+      "lng": 55.3657
+    },
+    "destination": {
+      "code": "ATL",
+      "name": "Atlanta Hartsfield",
+      "lat": 33.6407,
+      "lng": -84.4277
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": 31.9632,
+      "lng": -56.469,
+      "heading": 325.2
+    },
+    "estimatedDeparture": "2026-09-22T05:45:00.000Z",
+    "estimatedArrival": "2026-09-22T10:30:00.000Z",
+    "altitudeFt": 34510,
+    "speedKts": 435
+  },
+  {
+    "id": "FL-1016",
+    "flightNumber": "BA212",
+    "callsign": "BAW1208",
+    "aircraftType": "Boeing 737-800",
+    "origin": {
+      "code": "SYD",
+      "name": "Sydney Kingsford Smith",
+      "lat": -33.9399,
+      "lng": 151.1753
+    },
+    "destination": {
+      "code": "DFW",
+      "name": "Dallas Fort Worth",
+      "lat": 32.8998,
+      "lng": -97.0403
+    },
+    "status": "Active",
+    "currentPosition": {
+      "lat": -2.5252,
+      "lng": 34.514,
+      "heading": 70.5
+    },
+    "estimatedDeparture": "2026-09-22T06:02:00.000Z",
+    "estimatedArrival": "2026-09-22T11:40:00.000Z",
+    "altitudeFt": 35744,
+    "speedKts": 492
+  },
+  {
+    "id": "FL-1017",
+    "flightNumber": "AF219",
+    "callsign": "AFR1221",
+    "aircraftType": "Airbus A320neo",
+    "origin": {
+      "code": "SIN",
+      "name": "Singapore Changi",
+      "lat": 1.3644,
+      "lng": 103.9915
+    },
+    "destination": {
+      "code": "HKG",
+      "name": "Hong Kong Intl",
+      "lat": 22.308,
+      "lng": 113.9185
+    },
+    "status": "Delayed",
+    "currentPosition": {
+      "lat": 18.957,
+      "lng": 112.3302,
+      "heading": 24
+    },
+    "estimatedDeparture": "2026-09-22T06:19:00.000Z",
+    "estimatedArrival": "2026-09-22T12:50:00.000Z",
+    "altitudeFt": 36978,
+    "speedKts": 549
+  },
+  {
+    "id": "FL-1018",
+    "flightNumber": "UA226",
+    "callsign": "UAE1234",
+    "aircraftType": "Boeing 777-300ER",
+    "origin": {
+      "code": "AMS",
+      "name": "Amsterdam Schiphol",
+      "lat": 52.3105,
+      "lng": 4.7683
+    },
+    "destination": {
+      "code": "DEN",
+      "name": "Denver Intl",
+      "lat": 39.8561,
+      "lng": -104.6737
+    },
+    "status": "Arrived",
+    "currentPosition": {
+      "lat": 39.8561,
+      "lng": -104.6737,
+      "heading": 309.4
+    },
+    "estimatedDeparture": "2026-09-22T06:36:00.000Z",
+    "estimatedArrival": "2026-09-22T14:00:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  },
+  {
+    "id": "FL-1019",
+    "flightNumber": "JA233",
+    "callsign": "JAL1247",
+    "aircraftType": "Airbus A350-900",
+    "origin": {
+      "code": "LAX",
+      "name": "Los Angeles Intl",
+      "lat": 33.9416,
+      "lng": -118.4085
+    },
+    "destination": {
+      "code": "ORD",
+      "name": "Chicago O'Hare",
+      "lat": 41.9742,
+      "lng": -87.9073
+    },
+    "status": "Scheduled",
+    "currentPosition": {
+      "lat": 33.9416,
+      "lng": -118.4085,
+      "heading": 62.4
+    },
+    "estimatedDeparture": "2026-09-22T06:53:00.000Z",
+    "estimatedArrival": "2026-09-22T15:10:00.000Z",
+    "altitudeFt": 0,
+    "speedKts": 0
+  }
+]

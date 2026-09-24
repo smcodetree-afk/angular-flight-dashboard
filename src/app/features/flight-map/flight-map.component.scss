@@ -1,0 +1,116 @@
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.map-canvas {
+  height: 100%;
+  width: 100%;
+  background: var(--bg-app);
+}
+
+.map-legend {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 500;
+  display: flex;
+  gap: 12px;
+  background: rgba(16, 26, 44, 0.85);
+  border: 1px solid var(--border-subtle);
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(4px);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.active {
+    background: var(--status-active);
+  }
+  &.delayed {
+    background: var(--status-delayed);
+  }
+  &.arrived {
+    background: var(--status-arrived);
+  }
+  &.scheduled {
+    background: var(--status-scheduled);
+  }
+}
+
+::ng-deep {
+  .plane-marker {
+    background: transparent;
+    border: none;
+  }
+
+  .plane-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
+    transition: transform 0.2s ease;
+
+    &.selected svg {
+      filter: drop-shadow(0 0 6px currentColor);
+    }
+  }
+
+  .flight-popup .popup-inner {
+    font-family: var(--font-sans);
+    min-width: 160px;
+  }
+
+  .popup-title {
+    font-weight: 700;
+    font-family: var(--font-mono);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .popup-status {
+    font-size: 10px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-weight: 600;
+
+    &.status-active {
+      color: var(--status-active);
+      background: var(--status-active-bg);
+    }
+    &.status-delayed {
+      color: var(--status-delayed);
+      background: var(--status-delayed-bg);
+    }
+    &.status-arrived {
+      color: var(--status-arrived);
+      background: var(--status-arrived-bg);
+    }
+    &.status-scheduled {
+      color: var(--status-scheduled);
+      background: var(--status-scheduled-bg);
+    }
+  }
+
+  .popup-row {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+  }
+}

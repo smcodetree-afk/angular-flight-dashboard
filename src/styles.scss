@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Surfaces */
+  --bg-app: #0b1220;
+  --bg-panel: #101a2c;
+  --bg-panel-raised: #16223a;
+  --bg-hover: #1c2c48;
+  --border-subtle: #223252;
+  --border-strong: #2d4468;
+
+  /* Text */
+  --text-primary: #e7edf7;
+  --text-secondary: #9fb0cc;
+  --text-muted: #6c7fa0;
+
+  /* Accent / brand */
+  --accent: #3aa0ff;
+  --accent-strong: #63b8ff;
+
+  /* Status colors */
+  --status-active: #34d399;
+  --status-active-bg: rgba(52, 211, 153, 0.12);
+  --status-delayed: #f5a623;
+  --status-delayed-bg: rgba(245, 166, 35, 0.14);
+  --status-arrived: #4d8cf0;
+  --status-arrived-bg: rgba(77, 140, 240, 0.14);
+  --status-scheduled: #9b8cf0;
+  --status-scheduled-bg: rgba(155, 140, 240, 0.14);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.35);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 8px;
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+button {
+  font-family: inherit;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  &.status-active {
+    color: var(--status-active);
+    background: var(--status-active-bg);
+  }
+  &.status-delayed {
+    color: var(--status-delayed);
+    background: var(--status-delayed-bg);
+  }
+  &.status-arrived {
+    color: var(--status-arrived);
+    background: var(--status-arrived-bg);
+  }
+  &.status-scheduled {
+    color: var(--status-scheduled);
+    background: var(--status-scheduled-bg);
+  }
+}
+
+/* Leaflet overrides so the popup + controls match the dark theme */
+.leaflet-popup-content-wrapper {
+  background: var(--bg-panel-raised);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.leaflet-popup-tip {
+  background: var(--bg-panel-raised);
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: var(--text-secondary);
+}
+
+.leaflet-control-zoom a {
+  background: var(--bg-panel-raised) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(16, 26, 44, 0.75) !important;
+  color: var(--text-muted) !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--text-secondary) !important;
+}
